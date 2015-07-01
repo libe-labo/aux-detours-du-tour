@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+
+html, body, section.main-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content h1 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.main-content .fp-tableCell {
+    display: block;
+}
+
+.main-content__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.main-content__background__map {
+}
+
+.main-content__sections__section {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+}
+
+.main-content__background__map,
+.main-content__sections__section__map {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main-content__sections__section__text {
+    width: 50%;
+    height: 100%;
+    padding: 0 16px 16px 16px;
+
+    box-sizing: border-box;
+}
+
+.main-content__sections__section__text--cover {
+    background-color: #c42121;
+}
