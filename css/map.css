@@ -1,0 +1,18 @@
+.main-content__background__map,
+.main-content__sections__section__map {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.main-content__background__map object,
+.main-content__sections__section__map object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+}

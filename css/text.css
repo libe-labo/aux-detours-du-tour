@@ -1,13 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
-
-html, body, section.main-content {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
 .main-content h1 {
     text-align: center;
     font-family: 'Fjalla One', sans-serif;
@@ -28,50 +18,8 @@ html, body, section.main-content {
             transform: translate(0, -50%);
 }
 
-.main-content .fp-tableCell {
-    display: block;
-    position: relative;
-    top: -20px;
-    left: 0;
-}
-
-.main-content__background {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.main-content__sections__section {
-    position: relative;
-    top: 0;
-    left: 0;
-    padding-top: 50px;
-}
-
 .main-content__sections__section__text--cover {
     background-color: #c42121;
-}
-
-.main-content__background__map,
-.main-content__sections__section__map {
-    width: 55%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-}
-
-.main-content__background__map object,
-.main-content__sections__section__map object {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: 100%;
 }
 
 .main-content__sections__section__text {
