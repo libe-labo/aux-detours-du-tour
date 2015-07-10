@@ -7,7 +7,7 @@ $> npm install
 $> node generate.js
 ```
 
-## License
+## Licence
 
 > The MIT License (MIT)
 >
@@ -30,3 +30,5 @@ $> node generate.js
 > LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
+
+Toutes les données sont mises à disposition sous les termes de l'[Open Database License](http://opendatacommons.org/licenses/odbl/1.0/).
