@@ -1,0 +1,105 @@
+.main-content__background__map,
+.main-content__sections__section__map {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.main-content__background__map object,
+.main-content__sections__section__map__map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.main-content__background__map object {
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+        -ms-transition: all .4s;
+         -o-transition: all .4s;
+            transition: all .4s;
+}
+
+.main-content__sections__section__map object {
+    margin-top: -30px;
+}
+
+.main-content__sections__section__map__legend {
+    width: 30%;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+}
+
+div[data-anchor='s5'] .main-content__sections__section__map__legend,
+div[data-anchor='s8'] .main-content__sections__section__map__legend {
+    top: 25px;
+    bottom: auto;
+}
+
+div[data-anchor='s4'] .main-content__sections__section__map__legend,
+div[data-anchor='s6'] .main-content__sections__section__map__legend {
+    width: 25%;
+}
+
+.main-content__sections__section__map__text {
+    position: absolute;
+    z-index: 10;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5em;
+    bottom: 30%;
+    right: 73%;
+    color: #c42121;
+    text-align: right;
+}
+
+.map {
+    opacity: 0;
+}
+
+.main-content__sections__section__text__map {
+    display: none;
+}
+
+.main-content__sections__section__map__cover-text {
+    width: 40%;
+    font-family: 'Arvo', serif;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    text-align: center;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+.main-content__sections__section__map__cover-text a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+@media (max-width: 1280px) {
+    .main-content__sections__section__map__cover-text {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content__sections__section__map__cover-text {
+        font-size: .8em;
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Libération.fr – Aux détours du Tour :  parcours type et territoires favoris du Tour de France </title>
+        <meta charset="utf-8">
+        <meta name="description" content="Tout savoir sur les dernières actualités politiques, monde, société, sports, écologie avec le journal en ligne Libération.">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+        <meta name="keywords" content="actualités, news">
+        <link rel="shortcut icon" href="http://s1.libe.com/favicon.ico">
+        <link rel="shortcut icon" href="http://s1.libe.com/favicon.png">
+        <link rel="canonical" href="http://www.liberation.fr/apps/2015/07/tour-de-france">
+
+        <meta property="og:title" content="Aux détours du Tour :  parcours type et territoires favoris du Tour de France " />
+        <meta property="og:site_name" content="Libération.fr"/>
+        <meta property="og:image" content="http://www.liberation.fr/apps/2015/07/tour-de-france/assets/social.jpg" />
+        <meta property="og:url" content="http://www.liberation.fr/apps/2015/07/tour-de-france" />
+        <meta property="og:description" content="Quels territoires la Grande boucle aime-t-elle et snobe-t-elle ? A quoi ressemblerait le Tour type ? Comment les parcours ont-ils évolué depuis 1903 ? " />
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+        <script type="text/javascript" src="//cdn.rawgit.com/davatron5000/FitText.js/master/jquery.fittext.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/svg.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="css/header.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/mobile.css" />
+        <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <nav id="main-nav" role="navigation">
+                <div class="wrapper">
+                    <div class="navbar-header">
+                        <span class="navbar-brand">
+                            <a href="http://www.liberation.fr">
+                                <img src="http://s1.libe.com/img/logo-liberation-311x113.png" alt="Libération">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-content">
+            <div class="main-content__tooltip"></div>
+            <div class="main-content__background">
+                <div class="main-content__background__map">
+                    <object id="background-map" data="assets/fond-carte-TDF.svg" type="image/svg+xml"></object>
+                    {{#each sections}}
+                        {{^this.showMap}}
+                            <object class="map" id="map-{{ @index }}" data="assets/{{ this.svg }}.svg" type="image/svg+xml"></object>
+                        {{/this.showMap}}
+                {{/each}}
+                </div>
+            </div>
+            <div class="main-content__sections" id="sections">
+                <div class="main-content__sections__section">
+                    <div class="main-content__sections__section__text main-content__sections__section__text--cover">
+                        <h1>{{ cover.title }}</h1>
+                        <p>Baptiste Bouthier, Emilie Coquard et Paul Joannon</p>
+                    </div>
+                    <div class="main-content__sections__section__map">
+                        <div class="main-content__sections__section__map__cover-text">
+                            {{#each cover.text}}
+                                <p>{{ this }}</p>
+                            {{/each}}
+                            <br />
+                            <p>Lisez aussi le <a href="http://www.liberation.fr/sports/2015/07/03/le-tour-de-france-cartes-sur-table_1342796" target="_blank">making of</a> et <a href="http://www.liberation.fr/tour-de-france-2015,100532" target="_blank">tous nos contenus sur le Tour de France</a></p>
+                        </div>
+                    </div>
+                </div>
+                {{#each sections}}
+                <div class="main-content__sections__section" id="section-{{ @index }}">
+                    <div class="main-content__sections__section__text">
+                        <h2 class="dyn-color {{ this.isBlue }}">{{ this.title }}</h2>
+                        {{^this.hasSpecialMobileMap}}
+                        <object class="main-content__sections__section__text__map" data="assets/{{ this.svg }}.svg" type="image/svg+xml"></object>
+                        {{/this.hasSpecialMobileMap}}
+                        {{#this.hasSpecialMobileMap}}
+                        <object class="main-content__sections__section__text__map" data="assets/{{ this.svg }}-mobile.svg" type="image/svg+xml"></object>
+                        {{/this.hasSpecialMobileMap}}
+                        {{#each this.text}}
+                            <p>{{ this }}</p>
+                        {{/each}}
+                        {{#this.hasN1}}
+                            <div class="main-content__sections__section__text__hl">
+                                <table>
+                                    <tr>
+                                        <td><span>{{ this.n1.n }}</span></td>
+                                        <td>
+                                            <p>{{ this.n1.text }}</p>
+                                            <a href="" class="main-content__sections__section__text__hl__twitter" rel="{{ this.n1.tweet }}"><i class="fa fa-twitter"></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        {{/this.hasN1}}
+                        {{#this.hasN2}}
+                            <div class="main-content__sections__section__text__hl">
+                                <table>
+                                    <tr>
+                                        {{#this.hasN2Mob}}
+                                        <td><p>{{ this.n2Mob }}</p></td>
+                                        {{/this.hasN2Mob}}
+                                        {{^this.hasN2Mob}}
+                                        <td><p>{{ this.n2.text }}</p></td>
+                                        {{/this.hasN2Mob}}
+                                        <td>
+                                            <span>{{ this.n2.n }}</span>
+                                            <a href="" class="main-content__sections__section__text__hl__twitter" rel="{{ this.n2.tweet }}"><i class="fa fa-twitter"></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        {{/this.hasN2}}
+                    </div>
+                    <div class="main-content__sections__section__map">
+                        <div class="dyn-color main-content__sections__section__map__text">
+                            {{ this.mapTitle }}
+                        </div>
+                        {{#this.showMap}}
+                            <object class="main-content__sections__section__map__map" id="overmap-{{ this.id }}" data="assets/{{ this.svg }}.svg" type="image/svg+xml"></object>
+                        {{/this.showMap}}
+                        {{^this.showMap}}
+                            <object class="main-content__sections__section__map__map" id="overmap-{{ this.id }}" data="assets/{{ this.svg }}.svg" type="image/svg+xml" style="opacity:0;"></object>
+                        {{/this.showMap}}
+                        <object class="main-content__sections__section__map__legend" data="assets/{{ this.mapLegend }}.svg" type="image/svg+xml"></object>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <!-- Chartbeat -->
+        <script type='text/javascript'>
+            var _sf_async_config={};
+                _sf_async_config.uid = 43601;
+                _sf_async_config.domain = 'liberation.fr';
+                _sf_async_config.useCanonical = true;
+                _sf_async_config.sections = "Static";
+                _sf_async_config.authors = "Static";
+                (function(){
+                    function loadChartbeat() {
+                        window._sf_endpt=(new Date()).getTime();
+                        var e = document.createElement('script');
+                        e.setAttribute('language', 'javascript');
+                        e.setAttribute('type', 'text/javascript');
+                        e.setAttribute('src', 'http://static.chartbeat.com/' + 'js/chartbeat.js');
+                        document.body.appendChild(e);
+                    }
+                    var oldonload = window.onload;
+                    window.onload = (typeof window.onload != 'function') ?
+                    loadChartbeat : function() { oldonload(); loadChartbeat();
+                };
+            })();
+        </script>
+        <!-- // Chartbeat -->
+
+        <!-- Google Analytics -->
+        <script>
+            (function(p,a,u,l,L,o,z){p['GoogleAnalyticsObject']=L;p[L]=p[L]||function(){
+            (p[L].q=p[L].q||[]).push(arguments)},p[L].l=1*new Date();o=a.createElement(u),
+            z=a.getElementsByTagName(u)[0];o.async=1;o.src=l;z.parentNode.insertBefore(o,z)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-41822557-1', 'liberation.fr');
+            ga('send', 'pageview');
+        </script>
+        <!-- // Google Analytics -->
+
+        <!-- Xiti -->
+        <script type="text/javascript">
+            xtnv = document;
+            xtsd = "http://logliberation";
+            xtsite = "381060";
+            xtn2 = "48";
+            xtpage = "Static::Data::20115-07-tourdefrance";
+            xtdi = "";
+            xt_pagetype = "";
+            xt_multc = "&x1=0&x2=43&x3=&x4=&x5=&x6=7&x7=";
+            xt_an = "";
+            xt_ac = "";
+            if (window.xtparam==null) { window.xtparam = ''; }
+            window.xtparam += "&ptype="+xt_pagetype+"&ac="+xt_ac+"&an="+xt_an+xt_multc;
+        </script>
+        <noscript>
+            <img width="1" height="1" src="http://logliberation.xiti.com/hit.xiti?s=381060&amp;s2=56&amp;p=Static::Data::2015-07-tourdefrance&amp;di=&amp;" >
+        </noscript>
+        <script type="text/javascript" src="http://s1.libe.com/bloom/theme/js/xtcore.js"></script>
+        <!-- // Xiti -->
+
+    </body>
+</html>

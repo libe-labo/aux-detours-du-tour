@@ -3,6 +3,7 @@
 
 @import url(text.css);
 @import url(map.css);
+@import url(tooltip.css);
 
 html, body, section.main-content {
     width: 100%;

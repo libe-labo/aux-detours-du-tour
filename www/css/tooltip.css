@@ -1,0 +1,9 @@
+.main-content__tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: #fff;
+    padding: 10px;
+    font-family: 'Arvo', serif;
+}

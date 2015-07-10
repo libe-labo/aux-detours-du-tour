@@ -1,0 +1,124 @@
+.main-content h1 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #fff;
+    font-weight: 400;
+
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: 0;
+
+    -webkit-transform: translate(0, -50%);
+       -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+         -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+
+.main-content__sections__section__text--cover {
+    background-color: #c42121;
+    position: relative;
+}
+
+.main-content__sections__section__text--cover p {
+    color: #fff;
+    text-align: center;
+
+    position: absolute;
+    bottom: 3%;
+
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.main-content__sections__section__text {
+    width: 45%;
+    height: 100%;
+    padding-bottom: 32px;
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    border-right: 2px solid #dedede;
+}
+
+.main-content__sections__section__text h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 200;
+    color: #c42121;
+    text-transform: uppercase;
+    padding: 32px 32px 0 32px;
+}
+
+.main-content__sections__section__text p {
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+    padding: 0 32px;
+}
+
+.main-content__sections__section__text p span {
+    float: right;
+    width: 150px;
+    padding: 25px 0 25px 25px;
+    font-size: 1.1em;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-content__sections__section__text p span .main-content__sections__section__text__hl__twitter {
+    bottom: 0;
+    right: 0;
+    color: inherit;
+}
+
+.main-content__sections__section__text__hl {
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-content__sections__section__text__hl table {
+    padding: 0 32px;
+    border: none;
+}
+
+.main-content__sections__section__text__hl span {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4.5em;
+    height: 100%;
+}
+
+.main-content__sections__section__text__hl:first-of-type {
+    background-color: rgba(196, 33, 33, .2);
+    color: #c42121;
+    margin-top: 32px;
+}
+
+.main-content__sections__section__text__hl:last-of-type {
+    background-color: rgba(60, 99, 171, .2);
+    color: #3C63AB;
+}
+
+.main-content__sections__section__text__hl__twitter {
+    position: absolute;
+    bottom: 25px;
+}
+
+.main-content__sections__section__text__hl:first-of-type .main-content__sections__section__text__hl__twitter {
+    right: 25px;
+    color: #c42121;
+}
+
+.main-content__sections__section__text__hl:last-of-type .main-content__sections__section__text__hl__twitter {
+    left: 25px;
+    color: #3c63ab;
+}
