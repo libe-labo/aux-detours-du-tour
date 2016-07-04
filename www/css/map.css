@@ -30,7 +30,7 @@
 }
 
 .main-content__sections__section__map object {
-    margin-top: -30px;
+    margin-top: -45px;
 }
 
 .main-content__sections__section__map__legend {
@@ -54,11 +54,11 @@ div[data-anchor='s6'] .main-content__sections__section__map__legend {
 .main-content__sections__section__map__text {
     position: absolute;
     z-index: 10;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'libesansweb-semicondensed', sans-serif;
     font-size: 1.5em;
     bottom: 30%;
     right: 73%;
-    color: #c42121;
+    color: #e61e49;
     text-align: right;
 }
 
@@ -72,7 +72,7 @@ div[data-anchor='s6'] .main-content__sections__section__map__legend {
 
 .main-content__sections__section__map__cover-text {
     width: 40%;
-    font-family: 'Arvo', serif;
+    font-family: 'syntheselibeweb', sans-serif;
     color: #fff;
     position: relative;
     top: 50%;

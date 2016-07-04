@@ -23,14 +23,14 @@
     .main-content__sections__section__text h2 {
         margin: 20px 0 0 0;
         padding: 25px;
-        background-color: #c42121;
+        background-color: #e61e49;
         color: #fff;
         text-align: center;
     }
 
 
     .main-content__sections__section__text h2.mobile-blue {
-        background-color: #3C63AB;
+        background-color: #0aa9af;
     }
 
     .main-content__sections__section__text p {

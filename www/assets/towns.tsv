@@ -1,8 +1,8 @@
 Ville	Départs et arrivées
-Paris	147
+Paris	148
 Bordeaux	135
-Pau	119
-Bagnères-de-Luchon	103
+Pau	120
+Bagnères de Luchon	104
 Metz	77
 Grenoble	75
 Nice	71
@@ -11,22 +11,677 @@ Caen	65
 Briançon	64
 Marseille	64
 Bayonne	61
-Montpellier	57
+Montpellier	59
 Brest	55
 Nantes	55
 Toulouse	50
+Belfort	49
+Roubaix	49
+Gap	46
 Strasbourg	46
+Saint-Etienne	45
+Aix-les-Bains	44
+La Rochelle	39
+Angers	38
+Dunkerque	37
+Le Havre	35
 Besançon	34
+Cherbourg	34
 Rouen	34
 Lyon	33
+Morzine	33
+Les Sables d'Olonne	32
 Lille	31
+Nîmes	31
+Versailles	31
 Dijon	30
+L'Alpe d'Huez	30
+Evian	28
+Charleville-Mézières	27
 Nancy	27
+Limoges	26
 Rennes	26
-Limoges	24
+Cannes	24
+Mulhouse	24
+Bourg d'Oisans	23
+Digne les Bains	23
+Liège	23
+Saint-Gaudens	22
+Toulon	22
+Bruxelles	21
 Amiens	20
+Genève	20
+Vannes	20
+Albi	19
+Reims	19
+Saint-Brieuc	19
+Dieppe	18
+Futuroscope	18
+Luxembourg	17
+Narbonne	17
+Lorient	16
+Tarbes	16
+Thonon	16
+Tours	16
+Bagnères de Bigorre	15
+Fleurance	15
+Saint-Malo	15
+Brive-la-Gaillarde	14
+Colmar	14
+Divonne-les-Bains	14
+Royan	14
+Aix-en-Provence	13
+Aurillac	13
+Ax-les-Thermes	13
+Charleroi	13
+Le Mans	13
+Monaco	13
+Revel	13
+Troyes	13
+Carcassonne	12
+Chamonix	12
 Clermont-Ferrand	12
+Dinan	12
+Pontarlier	12
+Puy de Dôme	12
+Avignon	11
+Forest	11
+Montluçon	11
 Orléans	11
+Villard-de-Lans	11
+Auxerre	10
+Béziers	10
+Carpentras	10
+Dinard	10
+La Roche sur Yon	10
+Lausanne	10
+Malo les Bains	10
+Millau	10
+Mont Ventoux	10
+Pla d'Adet	10
+Vire	10
+Blagnac	9
+Dax	9
+Longwy	9
+Barcelone	8
+Epinal	8
+Jambes	8
+Luz-Ardiden	8
+Merlin Plage	8
+Plumelec	8
 Poitiers	8
-Châlons-en-Champagne	4
+Saint-Priest	8
+Alençon	7
+Annecy	7
+Avoriaz	7
+Cholet	7
+Fontenay-sous-Bois	7
+Fribourg en Brisgau	7
+Le Grand-Bornand	7
+Melun	7
+Namur	7
+Nevers	7
+Orcières-Merlette	7
+Saint-Sébastien	7
+Sestrières	7
+Vittel	7
+Wasquehal	7
+Auch	6
+Berlin	6
+Castres	6
+Cauterets	6
+Châteaulin	6
+Courchevel	6
+Epernay	6
+Evreux	6
+Hendaye	6
+Le Puy en Velay	6
+Lisieux	6
+Mende	6
+Montargis	6
+Mourenx	6
+Plateau de Beille	6
+Quimper	6
+Saint-Girons	6
+Saint-Nazaire	6
+Serre-Chevalier	6
+Superbagnères	6
+Turin	6
+Valenciennes	6
+Vitré	6
+Agen	5
+Andorre la Vieille	5
+Anvers	5
+Avranches	5
+Bâle	5
+Blois	5
+Bois-le-Duc	5
+Boulogne sur Mer	5
+Bourg Saint Maurice	5
+Bourg-en-Bresse	5
+Châlon-sur-Saône	5
+Créteil	5
+Francfort	5
+Gand	5
+Hautacam	5
+La Baule	5
+Lac de Vassivière	5
+Lannemezan	5
+Le Touquet Paris Plage	5
+Libourne	5
+Lourdes	5
+Mâcon	5
+Martigues	5
+Puy du Fou	5
+Rochefort	5
+Rodez	5
+Rotterdam	5
+Saint-Flour	5
+Saint-Gervais	5
+Saint-Jean-de-Maurienne	5
+Saintes	5
+Spa-Francorchamps	5
+Tournai	5
+Aime	4
+Albertville	4
+Alès	4
+Angoulême	4
+Antibes	4
+Arras	4
+Ax-3-Domaines	4
+Bagnoles de l'Orne	4
+Ballon d'Alsace	4
+Bergerac	4
+Biarritz	4
+Châlons en Champagne	4
+Cluses	4
+Compiègne	4
+Disneyland Paris	4
+Dublin	4
+Embrun	4
+Foix	4
+Fougères	4
+Gaillard	4
+Gérardmer	4
+Gex	4
+Grand-Couronne	4
+Huy	4
+La Grande Motte	4
+La Plagne	4
+Lac de Madine	4
+Langon	4
+Le Tréport	4
+Liévin	4
+Londres	4
+Lons le Saunier	4
+Montélimar	4
+Périgueux	4
+Saint-Nicolas	4
+Saint-Quentin	4
+Seo de Urgel	4
+Seraing	4
+Super Besse	4
+Val d'Isère	4
+Valréas	4
+Woluwé-Saint-Pierre	4
+Andorre Arcalis	3
+Aubagne	3
+Aubenas	3
+Beauvais	3
+Bonneval	3
+Bourg Madame	3
+Cahors	3
+Cambrai	3
+Cap d'Agde	3
+Castelsarrasin	3
+Champagnole	3
+Châteauroux	3
+Colomiers	3
+Dole	3
+Esch-sur-Alzette	3
+Figeac	3
+Granville	3
+Guzet-Neige	3
+Harelbeke	3
+Herenthals	3
+Issoire	3
+La Mongie	3
+La Toussuire	3
+Leiden	3
+Les Deux-Alpes	3
+Les Essarts	3
+Loudenvielle	3
+Louvain	3
+Luçon	3
+Manosque	3
+Mont-Saint-Michel	3
+Montereau-Fault-Yonne	3
+Montgeron	3
+Moûtiers	3
+Pforzheim	3
+Pra Loup	3
+Rambouillet	3
+Saint-Amand-Montrond	3
+Saint-Hilaire du Harcouët	3
+Saint-Jean-de-Monts	3
+Sainte-Foy-la-Grande	3
+Salies de Bearn	3
+Sallanches	3
+Scheveningen	3
+Sète	3
+Soissons	3
+Tulle	3
+Utrecht	3
+Valence	3
+Valence d'Agen	3
+Valkenburg	3
+Valloire	3
+Verdun	3
+Abbeville	2
+Aigurande	2
 Ajaccio	2
+Aoste	2
+Arc-et-Senans	2
+Arcachon	2
+Arenberg	2
+Argentan	2
+Aubisque	2
+Aulnay-sous-Bois	2
+Autun	2
+Bastia	2
+Berne	2
+Besse en Chandesse	2
+Béthune	2
+Bonneval-sur-Arc	2
+Boulogne-Billancourt	2
+Bourg-de-Péage	2
+Bourgoin	2
+Brétigny-sur-Orge	2
+Calais	2
+Cergy	2
+Challans	2
+Chambéry	2
+Chamrousse	2
+Chartres	2
+Châteaubriant	2
+Châtellerault	2
+Chaumont	2
+Concarneau	2
+Corbeil-Essones	2
+Crans-Montana	2
+Deauville	2
+Domaine du Rouret	2
+Draguignan	2
+Evry	2
+Font Romeu	2
+Fontaine-au-Pire	2
+Forge-les-Eaux	2
+Fribourg	2
+Hasselt	2
+Hyères	2
+Isola 2000	2
+Jaca	2
+Karlsruhe	2
+La Bourboule	2
+La Châtre	2
+La Planche des belles filles	2
+Lacanau	2
+Lanester	2
+Lans-en-Vercors	2
+Laon	2
+Laval	2
+Lavaur	2
+Lavelanet	2
+Le Creusot	2
+Le Lioran	2
+Les Rousses	2
+Limoux	2
+Lodève	2
+Loudun	2
+Louvroil	2
+Lunéville	2
+Maastricht	2
+Marennes	2
+Mazé	2
+Mégève	2
+Menton	2
+Modane	2
+Mohlin	2
+Molenbeek	2
+Mont Revard	2
+Mont-de-Marsan	2
+Montauban	2
+Montbéliard	2
+Montceau-les-Mines	2
+Montgenèvre	2
+Montpon-Ménesterol	2
+Mûr-de-Bretagne	2
+Nanterre	2
+Neufchatel-en-Bray	2
+Niort	2
+Nogent-sur-Marne	2
+Nogent-sur-Oise	2
+Orchies	2
+Orthez	2
+Pampelune	2
+Pinerolo	2
+Plouay	2
+Plymouth	2
+Portsmouth	2
+Pyrénées 2000	2
+Roquefort	2
+Saint-Amand-les-Eaux	2
+Saint-Dizier	2
+Saint-Emilion	2
+Saint-Germain-en-Laye	2
+Saint-Gilles-de-Croix-de-Vie	2
+Saint-Lary-Soulan	2
+Saint-Paul-Trois-Châteaux	2
+Saint-Raphaël	2
+Saint-Vincent d'Aoste	2
+Sanremo	2
+Santenay	2
+Sarrebourg	2
+Saumur	2
+Senlis	2
+Sint Willerbrord	2
+Stuttgart	2
+Tallard	2
+Thuir	2
+Tomblaine	2
+Tourmalet	2
+Trouville	2
+Vaison-la-Romaine	2
+Vichy	2
+Villefranche-sur-Saône	2
+Villeneuve-sur-Lot	2
+Villers-sur-Mer	2
+Vitoria	2
+Wiesbaden	2
+Zurich	2
+Agde	1
+Alfortville	1
+Altkirch	1
+Amsterdam	1
+Ancenis	1
+Andorre Pal	1
+Annemasse	1
+Annonay Davézieux	1
+Antony	1
+Arbois	1
+Argelès	1
+Argelès-Gazost	1
+Arlon	1
+Armentières	1
+Arpajon	1
+Arpajon-sur-Cère	1
+Auray	1
+Autrans	1
+Avesnes-sur-Helpe	1
+Bar-le-Duc	1
+Barcelonnette	1
+Bastogne	1
+Bazas	1
+Beauraing	1
+Bédoin	1
+Bellegarde-sur-Valserine	1
+Beringen	1
+Blain	1
+Blaye-les-Mines	1
+Bobigny	1
+Bondy	1
+Bornem	1
+Bourg-lès-Valence	1
+Bourg-Saint-Andéol	1
+Bourges	1
+Brighton	1
+Brignoles	1
+Brioude	1
+Bron	1
+Cagnes-sur-Mer	1
+Calvi	1
+Cambo-les-Bains	1
+Cambridge	1
+Cancale	1
+Canet-Plage	1
+Canterbury	1
+Cap Découverte	1
+Cap Fréhel	1
+Captieux	1
+Carhaix	1
+Carmaux	1
+Carnon	1
+Castelnaudary	1
+Castillon-la-Bataille	1
+Caverne du Pont-d'Arc	1
+Cérilly	1
+Chablis	1
+Chambord	1
+Chantilly	1
+Chantonnay	1
+Chassieu	1
+Château-Thierry	1
+Châtel	1
+Chaumeil	1
+Chorges	1
+Ciney	1
+Coblence	1
+Cognac	1
+Cologne	1
+Commercy	1
+Cordon	1
+Cork	1
+Corrèze	1
+Cosne-Cours-sur-Loire	1
+Cugnaux	1
+Culoz	1
+Cuneo	1
+Damazan	1
+Dinant	1
+Douai	1
+Douvres	1
+Enniscorthy	1
+Epinay-sous-Sénart	1
+Escaldes-Engordany	1
+Etampes	1
+Eurotunnel	1
+Fécamp	1
+Felsberg	1
+Finhaut	1
+Flers	1
+Fontaine	1
+Fontainebleau	1
+Fromentine	1
+Frontignan	1
+Gaillac	1
+Galibier	1
+Gérone	1
+Givors	1
+Gourette les Eaux bonnes	1
+Guéret	1
+Gueugnon	1
+Harrogate	1
+Issoudun	1
+Ivrea	1
+Jaunay-Clan	1
+Jausiers	1
+Joigny	1
+Joinville	1
+Jonzac	1
+L'Isle d'Abeau	1
+L'Isle-Jourdain	1
+La Chataigneraie	1
+La Chaux-de-Fonds	1
+La Défense	1
+La Ferté-sous-Jouarre	1
+La Guerche de Bretagne	1
+La Haie-Fouassière	1
+La Pierre-Saint-Martin	1
+La Ruchère	1
+La Tour du Pin	1
+Labastide d'Armagnac	1
+Lac de Payolle	1
+Lac de Saint-Point	1
+Lamballe	1
+Lannion	1
+Laplume	1
+Laruns	1
+Le Blanc	1
+Le Mônetier les Bains	1
+Le Perreux	1
+Le Pleynet	1
+Leeds	1
+Les Arcs	1
+Les Echelles	1
+Les Menuires	1
+Les Orres	1
+Levallois-Perret	1
+Lézat-sur-Lèze	1
+Lézignan-Corbières	1
+Livarot	1
+Longjumeau	1
+Lugny	1
+Luz-Saint-Sauveur	1
+Machecoul	1
+Marche en Famenne	1
+Marcoussis	1
+Martigny	1
+Maubeuge	1
+Maubourguet	1
+Mayenne	1
+Mazamet	1
+Meaux	1
+Méribel	1
+Meudon	1
+Meyrignac l'Eglise	1
+Miramas	1
+Moirans-en-Montagne	1
+Mons	1
+Mont des Alouettes	1
+Montaigu	1
+Montlhéry	1
+Montreuil	1
+Morcenx	1
+Morlaix	1
+Mouscron	1
+Muret	1
+Nay	1
+Neeltje Jans (Zélande)	1
+Nemours	1
+Neuchâtel	1
+Neuville-de-Poitou	1
+Noirmoutier-en-l'Île	1
+Noisy-le-Sec	1
+Obernai	1
+Oléron	1
+Olonne-sur-Mer	1
+Oloron	1
+Orange	1
+Oyonnax	1
+Palaiseau	1
+Pamiers	1
+Pantin	1
+Passage du Gois	1
+Pauillac	1
+Péronne	1
+Perros Guirec	1
+Peyragudes	1
+Peyrehorade	1
+Piau-Engaly	1
+Pla de Beret	1
+Pont l'Evêque	1
+Pont-Audemer	1
+Pontchâteau	1
+Pontoise	1
+Pornic	1
+Pornichet	1
+Porrentruy	1
+Port-Barcarès	1
+Porto-Vecchio	1
+Pouilly-en-Auxois	1
+Prapoutel	1
+Prato Nevoso	1
+Privas	1
+Redon	1
+Régnié-Durette	1
+Renazé	1
+Risoul	1
+Roanne	1
+Roscoff	1
+Ruelle-sur-Touvre	1
+Ruffec	1
+Rungis	1
+Sablé-sur-Sarthe	1
+Saint-Denis	1
+Saint-Dier-d'Auvergne	1
+Saint-Fargeau	1
+Saint-Galmier	1
+Saint-Gildas-des-Bois	1
+Saint-Grégoire	1
+Saint-Herblain	1
+Saint-Julien-en-Genévois	1
+Saint-Léonard-de-Noblat	1
+Saint-Lô	1
+Saint-Maixent-l'Ecole	1
+Saint-Martin-de-Landelles	1
+Saint-Méen-le-Grand	1
+Saint-Omer	1
+Saint-Orens-de-Gameville	1
+Saint-Pol-de-Léon	1
+Saint-Pourçain-sur-Sioule	1
+Saint-Quentin-en-Yvelines	1
+Saint-Trivier	1
+Saint-Valery-en-Caux	1
+Sainte-Geneviève-des-Bois	1
+Sainte-Marie-du-Mont	1
+Samatan	1
+Sarran	1
+Sarrebruck	1
+Sarrelouis	1
+Sauternes	1
+Savines	1
+Sceaux	1
+Sedan	1
+Seignosse	1
+Semnoz	1
+Semur-en-Auxois	1
+Sens	1
+Seurre	1
+Sèvres	1
+Sheffield	1
+Sisteron	1
+Tarascon-sur-Ariège	1
+Thionville	1
+Tignes	1
+Tonnerre	1
+Tournus	1
+Trélissac	1
+Trets	1
+Val Louron	1
+Val Thorens	1
+Valentigney	1
+Vals-les-Bains	1
+Vatan	1
+Verbier	1
+Verviers	1
+Vesoul	1
+Veurey	1
+Vielha	1
+Villars-les-Dombes	1
+Ville d'Avray	1
+Villeneuve-d'Ascq (Lille Métropole)	1
+Villers-Cotterêts	1
+Villeurbanne	1
+Villié-Morgon	1
+Viry-Chatillon	1
+Visé	1
+Vizille	1
+Voiron	1
+Voreppe	1
+Vouvray	1
+Wanze	1
+Waregem	1
+Waterloo	1
+York	1
+Ypres	1
+Zolder	1

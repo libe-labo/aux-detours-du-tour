@@ -1,41 +1,43 @@
+@font-face {
+    font-family: 'libetypewriter';
+    src: url('libetypewriter-regular.otf') format('woff');
+
+    font-style: normal;
+    font-weight: 400;
+}
+
 .main-content h1 {
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'libesansweb-semicondensed', sans-serif;
     text-transform: uppercase;
-    line-height: 1.5em;
     color: #fff;
     font-weight: 400;
-
-    position: relative;
-    top: 50%;
-    left: 0;
-    margin: 0;
-
-    -webkit-transform: translate(0, -50%);
-       -moz-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-         -o-transform: translate(0, -50%);
-            transform: translate(0, -50%);
+    font-size: 6em;
+    letter-spacing: 0.05em;
 }
 
 .main-content__sections__section__text--cover {
-    background-color: #c42121;
+    background-color: #e61e49;
     position: relative;
 }
 
 .main-content__sections__section__text--cover p {
+    max-width: 750px;
+    margin: auto;
+
     color: #fff;
-    text-align: center;
+}
 
-    position: absolute;
-    bottom: 3%;
+.main-content__sections__section__text--cover p .begin {
+    padding: .5em 1em;
 
-    width: 100%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-        -ms-box-sizing: border-box;
-         -o-box-sizing: border-box;
-            box-sizing: border-box;
+    border-radius: 1em;
+
+    background-color: #ffffff;
+
+    color: #e61e49;
+
+    cursor: pointer;
 }
 
 .main-content__sections__section__text {
@@ -45,32 +47,41 @@
     overflow: hidden;
 
     box-sizing: border-box;
-
-    border-right: 2px solid #dedede;
 }
 
 .main-content__sections__section__text h2 {
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 200;
-    color: #c42121;
-    text-transform: uppercase;
     padding: 32px 32px 0 32px;
+
+    font-family: 'libesansweb-semicondensed', sans-serif;
+    color: #3c3c3b;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-content__sections__section__text p {
-    font-family: 'Arvo', serif;
+    font-family: 'syntheselibeweb', sans-serif;
     font-weight: 400;
     padding: 0 32px;
+
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 .main-content__sections__section__text p span {
     float: right;
-    width: 150px;
+    width: 200px;
     padding: 25px 0 25px 25px;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    font-family: 'libetypewriter', serif;
     position: relative;
     top: 0;
     left: 0;
+    color: #e61e49;
 }
 
 .main-content__sections__section__text p span .main-content__sections__section__text__hl__twitter {
@@ -80,32 +91,53 @@
 }
 
 .main-content__sections__section__text__hl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding: 10px 0;
     position: relative;
     top: 0;
     left: 0;
+
+    height: calc((100% - 65px) / 2);
 }
 
-.main-content__sections__section__text__hl table {
-    padding: 0 32px;
-    border: none;
+.main-content__sections__section__text__hl p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    text-align: center;
 }
 
-.main-content__sections__section__text__hl span {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 4.5em;
-    height: 100%;
+.main-content__sections__section__text__hl__large {
+    text-align: center;
+    font-family: 'libesansweb-condensed', sans-serif;
+    font-size: 8em;
+    letter-spacing: 0.005em;
 }
 
 .main-content__sections__section__text__hl:first-of-type {
-    background-color: rgba(196, 33, 33, .2);
-    color: #c42121;
-    margin-top: 32px;
+    background-color: #e61e49;
+    color: #ffffff;
+
+    margin-top: 16px;
 }
 
 .main-content__sections__section__text__hl:last-of-type {
-    background-color: rgba(60, 99, 171, .2);
-    color: #3C63AB;
+    background-color:#fad2db;
+    color: #e61e49;
+}
+
+.mobile-blue .main-content__sections__section__text__hl:first-of-type {
+    background-color: #0aa9af;
+    color: #ffffff;
+}
+
+.mobile-blue  .main-content__sections__section__text__hl:last-of-type {
+    background-color:#e5f6f7;
+    color: #0aa9af;
 }
 
 .main-content__sections__section__text__hl__twitter {
@@ -115,10 +147,10 @@
 
 .main-content__sections__section__text__hl:first-of-type .main-content__sections__section__text__hl__twitter {
     right: 25px;
-    color: #c42121;
+    color: #e61e49;
 }
 
 .main-content__sections__section__text__hl:last-of-type .main-content__sections__section__text__hl__twitter {
     left: 25px;
-    color: #3c63ab;
+    color: #0aa9af;
 }

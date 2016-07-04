@@ -11,7 +11,9 @@ var cover = d3.tsv.parse(fs.readFileSync('data.tsv', { encoding : 'utf-8'}), fun
     return {
         id : +id,
         title : new handlebars.SafeString(d.Titre.replace('XXIe', 'XXI<sup>e</sup>').replace(/\n/g, '<br />')),
+        hasTitle : (d.Titre || '').length > 0,
         text : d.Texte.replace('XXIe', 'XXI<sup>e</sup>').replace('11e', '11<sup>e</sup>').split('\n'),
+        hasText : (d.Texte || '').length > 0,
         svg : d.SVG,
         hasN1 : (d['Chiffre 1'] || '').length > 0,
         n1 : {
@@ -25,8 +27,8 @@ var cover = d3.tsv.parse(fs.readFileSync('data.tsv', { encoding : 'utf-8'}), fun
             tweet : d['Tweet chiffre 2'],
             text : new handlebars.SafeString(d['Texte chiffre 2'])
         },
-        isBlue : [5, 6, 9, 10, 11, 12].indexOf(id) >= 0 ? 'mobile-blue' : '',
-        showMap : [5, 6, 7, 8].indexOf(id) >= 0,
+        isBlue : [6, 11].indexOf(id) >= 0 ? 'mobile-blue' : '',
+        showMap : false,//[5, 6, 7, 8].indexOf(id) >= 0,
         mapTitle : new handlebars.SafeString((d['Titre carte'] != null ? d['Titre carte'] : '').replace(/\n/g, '<br />').replace('XXIe', 'XXI<sup>e</sup>')),
         mapLegend : d['SVG Légende'],
         hasX : (d.x || '').length > 0,

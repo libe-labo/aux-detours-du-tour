@@ -8,21 +8,10 @@ $(function() {
 
     var backgroundMapSvgDocument;
 
-    var franceGoes = function(color) {
-        if (backgroundMapSvgDocument != null) {
-            backgroundMapSvgDocument.find('#FRANCE_1_').css('fill', color);
-            backgroundMapSvgDocument.find('#CORSE_1_').css('fill', color);
-        }
-    };
-
     $('#background-map').each(function() {
         backgroundMapSvgDocument = $(this.getSVGDocument());
-        franceGoes('#c42121');
         this.addEventListener('load', function() {
             backgroundMapSvgDocument = $(this.getSVGDocument());
-            if (currentSlide === 0 || currentSlide === 1) {
-                franceGoes('#c42121');
-            }
         });
     });
 
@@ -42,7 +31,7 @@ $(function() {
         var lastWas = ['', 0];
         $('#sections').fullpage({
             sectionSelector : '.main-content__sections__section',
-            anchors : ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13'],
+            anchors : ['s1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13', 's14', 's15'],
             onLeave: function(index, nextIndex, direction) {
                 if (index > 1) {
                     var _index = index - 2;
@@ -63,25 +52,24 @@ $(function() {
                 }
 
                 currentSlide = nextIndex;
-                if (currentSlide === 0 || currentSlide === 1) {
-                    franceGoes('#c42121');
-                } else {
-                    franceGoes('#fff');
-                }
 
-                $('.dyn-color').css('color', [5, 6, 9, 10, 11, 12].indexOf(currentSlide) >= 0 ? '#3C63AB' : '#c42121');
+                // $('.dyn-color').css('color', [5, 6, 9, 10, 11, 12].indexOf(currentSlide) >= 0 ? '#0aa9af' : '#e61e49');
 
                 $('.main-content__tooltip').css('display', 'none');
                 $('#map-' + (index - 2)).css('opacity', 0).css('z-index', 1);
                 $('#map-' + (nextIndex - 2)).css('opacity', 1).css('z-index', 500);
             }
         });
+
+        $('.begin').on('click', function() {
+            $.fn.fullpage.moveSectionDown();
+        });
     } else {
         $('.main-content__sections__section').first().css('height', $(window).height());
     }
 
     // Cover title
-    $('.main-content__sections__section__text--cover h1').fitText(0.6);
+    // $('.main-content__sections__section__text--cover h1').fitText(0.6);
 
     // Navigation
     $('.main-content__navigate--up').click(function(event) {

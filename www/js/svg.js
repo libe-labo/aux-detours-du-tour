@@ -67,28 +67,28 @@ $(function() {
     };
 
     var getPrologIfNeeded = function(mapId, name) {
-        if (mapId === 9 && name === 'Dunkerque' ||
-            mapId === 11 && name === 'Nantes' ||
-            mapId === 12 && name === 'Liège') {
-            return tsv[mapId][0].label;
-        }
+        // if (mapId === 9 && name === 'Dunkerque' ||
+        //     mapId === 11 && name === 'Nantes' ||
+        //     mapId === 12 && name === 'Liège') {
+        //     return tsv[mapId][0].label;
+        // }
         return name;
     };
 
     var getText = function(mapId, name) {
-        if ([2, 3, 4, 6].indexOf(mapId) >= 0) {
+        if ([2, 3, 4, 7].indexOf(mapId) >= 0) {
             if (dptsTsv[name] != null) {
                 name = name + ' : ' + dptsTsv[name][0][mapId];
             }
-        } else if (mapId === 5) {
+        } else if ([5, 6].indexOf(mapId) >= 0) {
             if (townTsv[name] != null) {
                 name = name + ' : ' + townTsv[name][0].n;
             }
-        } else if (mapId === 7) {
+        } else if ([8, 9].indexOf(mapId) >= 0) {
             if (countriesTsv[name] != null) {
                 name = name + ' : ' + countriesTsv[name][0].n;
             }
-        } else if (mapId === 8) {
+        } else if ([10, 11].indexOf(mapId) >= 0) {
             if (belgiumTsv[name] != null) {
                 name = name + ' : ' + belgiumTsv[name][0].n;
             }
@@ -97,39 +97,36 @@ $(function() {
     };
 
     var svgHandlers = [];
-    for (var i = 0; i < 11; ++i) {
+    for (var i = 0; i < 15; ++i) {
         svgHandlers[i] = function(svgDocument, mapId) {
             mapId = parseInt(mapId.replace(/[^0-9]/g, ''));
-            _.each(['.hover', 'polygon', 'circle', 'path'], function(selector) {
-                svgDocument.find(selector)
-                    .on('mouseenter', function() {
-                        var name = $(this).attr('id').replace(/_x27_/g, '\'')
-                                                     .replace(/_x29_/g, '-')
-                                                     .replace(/_[0-9]+_/, '')
-                                                     .replace(/_/g, ' ');
-                        if (name.indexOf('FRANCE') < 0 && name.indexOf('XMLID') < 0) {
-                            if (name.indexOf('etape') >= 0) {
-                                name = tsv[mapId][name.replace(/[^0-9]/g, '')].label;
-                            }
-                            name = getPrologIfNeeded(mapId, name);
-                            name = getText(mapId, name);
-                            $(this).css('cursor', 'pointer');
-                            $('.main-content__tooltip').text(name).css('display', 'block');
-                            $(this).on('mousemove', function(event) {
-                                var offset = $('#overmap-' + mapId).offset();
-                                if ($('#overmap-' + mapId).css('display') === 'none') {
-                                    offset = $('#map-' + mapId).offset();
-                                }
-                                moveTooltip(event.pageX + offset.left,
-                                            event.pageY + offset.top);
-                            })
-                            .on('mouseleave', function() {
-                                $('.main-content__tooltip').css('display', 'none');
-                            });
-                        } else {
-                            // $(this).css('pointer-events', 'none');
+            _.each(['.hover', 'polygon', 'circle', 'path', 'ellipse'], function(selector) {
+                svgDocument.find(selector).on('mouseenter', function() {
+                    if ($(this).attr('id') == null) { return; }
+                    var name = $(this).attr('id').replace(/_x27_/g, '\'')
+                                                 .replace(/_x29_/g, '-')
+                                                 .replace(/_[0-9]+_/, '')
+                                                 .replace(/_/g, ' ');
+                    if (name.toUpperCase().indexOf('FRANCE') < 0 && name.toUpperCase().indexOf('XMLID') < 0) {
+                        if (name.indexOf('etape') >= 0) {
+                            name = tsv[mapId][name.replace(/[^0-9]/g, '')].label;
                         }
-                    });
+                        name = getPrologIfNeeded(mapId, name);
+                        name = getText(mapId, name);
+                        $(this).css('cursor', 'pointer');
+                        $('.main-content__tooltip').text(name).css('display', 'block');
+                        $(this).on('mousemove', function(event) {
+                            var offset = $('#overmap-' + mapId).offset();
+                            if ($('#overmap-' + mapId).css('display') === 'none') {
+                                offset = $('#map-' + mapId).offset();
+                            }
+                            moveTooltip(event.pageX + offset.left,
+                                        event.pageY + offset.top);
+                        }).on('mouseleave', function() {
+                            $('.main-content__tooltip').css('display', 'none');
+                        });
+                    }
+                });
             });
         }.bind(this);
     }
