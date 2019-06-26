@@ -1,97 +1,97 @@
-N°	Département	2	3	4	6
-23	Creuse	0	1	1	1
-70	Haute-Saône	0	3	2	3
-79	Deux-Sèvres	0	3	1	3
-95	Val-d'Oise	0	3	0	3
-2A	Corse-du-Sud	0	3	3	3
-2B	Haute-Corse	0	3	3	3
-18	Cher	0	4	3	4
-53	Mayenne	0	4	0	4
-28	Eure-et-Loir	0	5	4	5
-52	Haute-Marne	0	5	3	5
-41	Loir-et-Cher	0	6	2	6
-46	Lot	0	6	3	6
-48	Lozère	0	6	4	6
-16	Charente	0	7	3	7
-27	Eure	0	7	0	7
-43	Haute-Loire	0	7	2	7
-58	Nièvre	0	8	2	8
-82	Tarn-et-Garonne	0	8	4	8
-93	Seine-Saint-Denis	0	8	0	8
-47	Lot-et-Garonne	0	9	0	9
-55	Meuse	0	9	4	9
-7	Ardèche	0	10	4	10
-36	Indre	0	10	6	10
-2	Aisne	4	7	5	11
-24	Dordogne	0	11	2	11
-92	Hauts-de-Seine	0	11	3	11
-26	Drôme	0	12	10	12
-60	Oise	0	12	3	12
-10	Aube	2	11	2	13
-61	Orne	0	14	2	14
-72	Sarthe	0	14	1	14
-3	Allier	0	15	5	15
-40	Landes	0	15	2	15
-89	Yonne	0	15	4	15
-39	Jura	6	10	5	16
-12	Aveyron	0	17	3	17
-37	Indre-et-Loire	0	17	4	17
-45	Loiret	0	17	4	17
-94	Val-de-Marne	0	17	1	17
-77	Seine-et-Marne	0	18	5	18
-91	Essonne	2	16	8	18
-71	Saône-et-Loire	0	19	8	19
-88	Vosges	0	19	6	19
-15	Cantal	0	21	7	21
-19	Corrèze	0	21	3	21
-32	Gers	0	23	2	23
-80	Somme	2	21	4	23
-62	Pas-de-Calais	0	24	8	24
-1	Ain	4	24	9	28
-8	Ardennes	22	6	2	28
-51	Marne	2	27	7	29
-83	Var	20	9	1	29
-4	Alpes-de-Haute Provence	14	18	6	32
-81	Tarn	0	32	13	32
-86	Vienne	0	32	0	32
-87	Haute-Vienne	0	32	5	32
-11	Aude	10	23	9	33
-21	Côte-d'Or	6	29	1	35
-30	Gard	18	17	4	35
-63	Puy-de-Dôme	0	36	4	36
-22	Côte-d'Armor	12	25	7	37
-78	Yvelines	0	37	2	37
-84	Vaucluse	0	39	7	39
-54	Meurthe-et-Moselle	12	28	5	40
-9	Ariège	6	35	21	41
-68	Haut-Rhin	6	37	7	43
-42	Loire	0	47	6	47
-67	Bas-Rhin	22	25	7	47
-49	Maine-et-loire	4	45	6	49
-56	Morbihan	14	35	9	49
-69	Rhône	12	37	5	49
-90	Territoire de Belfort	38	11	1	49
-25	Doubs	8	42	8	50
-50	Manche	30	21	9	51
-35	Ille-et-Vilaine	8	58	10	66
-17	Charente-Maritime	36	31	0	67
-29	Finistère	46	27	3	73
-85	Vendée	36	40	10	76
-44	Loire-Atlantique	24	53	5	77
-57	Moselle	48	32	2	80
-66	Pyrénées-Orientales	52	28	2	80
-34	Hérault	24	60	17	84
-13	Bouches-du-Rhône	42	45	7	87
-65	Hautes-Pyrénées	4	83	29	87
-14	Calvados	46	43	4	89
-73	Savoie	20	79	23	99
-76	Seine-Maritime	32	69	5	101
-6	Alpes-Maritimes	73	31	3	104
-74	Haute-Savoie	31	102	23	133
-5	Hautes-Alpes	30	107	22	137
-75	Paris	63	85	18	148
-33	Gironde	48	110	7	158
-59	Nord	58	100	11	158
-38	Isère	46	113	25	159
-31	Haute-Garonne	66	144	21	210
-64	Pyrénées-Atlantiques	68	142	24	210
+Département	2	3	4	6
+Ain	4	25	10	3,222222222
+Aisne	4	7	5	2,2
+Allier	0	15	5	3,75
+Alpes-de-Haute-Provence	14	18	6	5,333333333
+Alpes-Maritimes	73	31	3	17,33333333
+Ardèche	0	10	4	1,428571429
+Ardennes	22	6	2	14
+Ariège	6	38	24	4
+Aube	2	13	4	15
+Aude	10	26	12	7,2
+Aveyron	0	20	6	5
+Bas-Rhin	22	25	7	23,5
+Bouches-du-Rhône	42	48	10	12,85714286
+Calvados	46	43	4	11,125
+Cantal	0	22	8	5,5
+Charente	0	7	3	1,75
+Charente-Maritime	36	31	0	9,571428571
+Cher	0	4	3	2
+Corrèze	0	21	3	3,5
+Corse-du-Sud	0	3	3	1,5
+Côtes-d'Armor	12	29	1	5,833333333
+Côte-d'Or	6	26	8	5,428571429
+Creuse	0	1	1	1
+Deux-Sèvres	0	3	1	1,5
+Dordogne	0	14	5	2,8
+Doubs	8	42	8	10
+Drôme	0	15	13	2,5
+Essonne	2	17	9	1,461538462
+Eure	0	7	0	3,5
+Eure-et-Loir	0	7	6	2,333333333
+Finistère	46	29	5	9,375
+Gard	18	20	7	12,66666667
+Gers	0	23	2	5,75
+Gironde	48	110	7	13,16666667
+Haut-Rhin	6	39	9	11,25
+Haute-Corse	0	3	3	1,5
+Haute-Garonne	66	149	26	21,5
+Haute-Loire	0	10	5	5
+Haute-Marne	0	5	3	1,666666667
+Haute-Saône	0	6	5	3
+Haute-Savoie	31	104	25	7,941176471
+Haute-Vienne	0	32	5	10,66666667
+Hautes-Alpes	30	113	28	10,21428571
+Hautes-Pyrénées	4	90	36	4,476190476
+Hauts-de-Seine	0	11	3	1,222222222
+Hérault	24	59	16	10,375
+Ille-et-Vilaine	8	59	11	6,7
+Indre	0	10	6	1,666666667
+Indre-et-Loire	0	17	4	8,5
+Isère	46	116	28	8,1
+Jura	6	12	7	2,571428571
+Landes	0	15	2	2,5
+Loir-et-Cher	0	6	2	3
+Loire	0	49	8	16,33333333
+Loire-Atlantique	24	54	6	6
+Loiret	0	17	4	8,5
+Lot	0	6	3	3
+Lot-et-Garonne	0	9	0	2,25
+Lozère	0	7	5	7
+Maine-et-Loire	4	47	8	12,75
+Manche	30	21	9	6,375
+Marne	2	29	9	10,33333333
+Mayenne	0	4	0	1,333333333
+Meurthe-et-Moselle	12	30	7	10,5
+Meuse	0	9	4	2,25
+Morbihan	14	37	11	7,285714286
+Moselle	48	32	2	26,66666667
+Nièvre	0	8	2	4
+Nord	58	101	12	9,352941176
+Oise	0	12	3	2,4
+Orne	0	14	2	3,5
+Paris	63	88	21	151
+Pas-de-Calais	0	25	9	3,125
+Puy-de-Dôme	0	36	4	5,142857143
+Pyrénées-Atlantiques	68	150	32	13,625
+Pyrénées-Orientales	52	28	2	10
+Rhône	12	37	5	5,444444444
+Saône-et-Loire	0	21	10	2,625
+Sarthe	0	14	1	7
+Savoie	20	88	32	4,909090909
+Seine-et-Marne	0	18	5	2,571428571
+Seine-Maritime	32	69	5	11,22222222
+Seine-Saint-Denis	0	8	0	1,142857143
+Somme	2	22	5	8
+Tarn	0	34	15	4,25
+Tarn-et-Garonne	0	8	4	2,666666667
+Territoire-de-Belfort	38	12	2	50
+Val-d'Oise	0	3	0	1,5
+Val-de-Marne	0	17	1	2,833333333
+Var	20	9	1	5,8
+Vaucluse	0	39	7	5,571428571
+Vendée	36	44	14	4,210526316
+Vienne	0	32	0	5,333333333
+Vosges	0	22	9	5,5
+Yonne	0	15	4	2,5
+Yvelines	0	39	4	7,8
